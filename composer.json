@@ -1,0 +1,44 @@
+{
+    "name": "boldminded/dexter-statamic",
+    "description": "Algolia and Meilisearch indexing for Statamic, with nested field extraction, document parsing, and AI enrichment.",
+    "type": "statamic-addon",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "BoldMinded\\Dexter\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BoldMinded\\Dexter\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Dexter",
+            "description": "Algolia and Meilisearch indexing with nested field extraction"
+        },
+        "laravel": {
+            "providers": [
+                "BoldMinded\\Dexter\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.3",
+        "boldminded/dexter-core": "^1.0.13"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.8 || ^11.0",
+        "phpunit/phpunit": "^12.5",
+        "statamic/cms": "^5.0 || ^6.0"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

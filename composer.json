@@ -1,6 +1,7 @@
 {
     "name": "boldminded/dexter-statamic",
     "description": "Algolia and Meilisearch indexing for Statamic, with nested field extraction, document parsing, and AI enrichment.",
+    "version": "1.0.0",
     "type": "statamic-addon",
     "license": "proprietary",
     "keywords": [

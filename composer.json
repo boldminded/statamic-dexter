@@ -3,6 +3,28 @@
     "description": "Algolia and Meilisearch indexing for Statamic, with nested field extraction, document parsing, and AI enrichment.",
     "type": "statamic-addon",
     "license": "proprietary",
+    "keywords": [
+        "statamic",
+        "statamic-addon",
+        "algolia",
+        "meilisearch",
+        "search",
+        "indexing"
+    ],
+    "homepage": "https://boldminded.com/add-ons/dexter",
+    "support": {
+        "issues": "https://github.com/boldminded/statamic-dexter/issues",
+        "docs": "https://docs.boldminded.com/dexter/docs-statamic",
+        "source": "https://github.com/boldminded/statamic-dexter"
+    },
+    "authors": [
+        {
+            "name": "Brian Litzinger",
+            "email": "litzinger@gmail.com",
+            "homepage": "https://boldminded.com",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "BoldMinded\\Dexter\\": "src"
@@ -26,19 +48,23 @@
     },
     "require": {
         "php": "^8.3",
-        "boldminded/dexter-core": "^1.0.13"
+        "boldminded/dexter-core": "^1.0.17",
+        "statamic/cms": "^5.0 || ^6.0"
     },
     "require-dev": {
         "orchestra/testbench": "^10.8 || ^11.0",
-        "phpunit/phpunit": "^12.5",
-        "statamic/cms": "^5.0 || ^6.0"
+        "phpunit/phpunit": "^12.5"
     },
     "scripts": {
         "test": "phpunit"
     },
     "config": {
         "allow-plugins": {
-            "php-http/discovery": true
-        }
-    }
+            "php-http/discovery": true,
+            "pixelfear/composer-dist-plugin": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }

@@ -2,7 +2,15 @@
 
 **Algolia and Meilisearch indexing for Statamic, with nested field extraction, document parsing, and AI enrichment.**
 
-Dexter indexes your Statamic entries, terms, assets, and users into Algolia or Meilisearch. It extracts content from nested fields such as Bard, Replicator, and Grid, parses text out of PDF and Office documents, and can enrich records with AI-generated summaries, keywords, and embeddings.
+Statamic ships with a native Algolia driver, but it’s a basic connection and little more. Dexter goes much further. It makes your entire site searchable, tolerant of typos, and aware of context, with your choice of Algolia or Meilisearch behind it. It indexes entries, terms, assets, and users, digs into nested content most search tools skip, reads your documents and images, and can enrich records with AI so visitors find what they mean, not just what they typed.
+
+- **Your choice of engine:** Works with Algolia or Meilisearch, so you aren’t locked into one provider
+- **Typo-friendly, context-based search:** Visitors find the right content even when they misspell or phrase things loosely
+- **Everything is searchable:** Indexes entries, terms, assets, and users
+- **Nested field extraction:** Pulls content out of Bard, Replicator, and Grid fields
+- **Document parsing:** Extracts text from PDF and Office documents
+- **Image understanding:** Parses and describes images so they show up in results
+- **AI enrichment:** Adds generated summaries, keywords, and embeddings to your records
 
 ## Installation
 
